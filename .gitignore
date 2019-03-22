@@ -1,0 +1,7 @@
+# Intellij Plugin
+
+/plugin/.idea
+/plugin/out/
+/plugin/lib/
+/plugin/*.iml
+/plugin/src/data.sqlite

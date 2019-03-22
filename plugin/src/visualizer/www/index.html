@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="lib/fontawesome-free-5.7.2-web/css/all.css">
+</head>
+<body>
+<div class="target center">
+    When you see this page, this means that there was a problem loading the Web process.
+</div>
+<nav>
+    <div class="icon-bar">
+        <a class="active button-dashboard"><i class="fas fa-tachometer-alt"></i></a>
+        <a class="button-project"><i class="fas fa-code"></i></a>
+        <a class="button-graph"><i class="fas fa-chart-line"></i></a>
+    </div>
+</nav>
+</body>
+
+<template id="template-dashboard">
+    <div>
+        <h1>Dashboard <i class="info-button fas fa-info-circle"></i></h1>
+        <p class="info hidden">Das Dashboard zeigt einige allgemeine Daten über alle Projekte an denen gearbeitet
+            wurde.</p>
+        <div class="timeframe">
+        </div>
+        <div class="divider"></div>
+
+        <div class="datacircles-dashboard">
+            <div class="data-time circle" id="circle1"></div>
+            <div class="data-locs circle" id="circle2"></div>
+            <div class="data-numprojects circle" id="circle3"></div>
+        </div>
+        <h2>Bearbeitete Projekte</h2>
+        <ul class="data-projectlist scrollbox"></ul>
+    </div>
+</template>
+
+<template id="template-project">
+    <div>
+        <h1 class="title">Projekt </h1>
+        <p class="info hidden">Die Projektansicht zeigt Daten über ein bestimmtes Projekt.</p>
+        <div class="hideHelper">
+            <ul class="data-tags scrollbox"></ul>
+            <p class="description-short">DESCRIPTION-SHORT</p>
+            <p class="description-long">DESCRIPTION-LONG</p>
+            <div class="timeframe">
+            </div>
+            <div class="datacircles-dashboard">
+                <a class="data-time circle"></a>
+                <a class="data-locs circle"></a>
+                <a class="data-compiles circle"></a>
+            </div>
+            <h2>Bearbeitete Dateien</h2>
+            <ul class="data-filelist scrollbox"></ul>
+        </div>
+    </div>
+</template>
+
+<template id="template-graph">
+    <div>
+        <h1>Graph<i class="info-button fas fa-info-circle"></i></h1>
+        <p class="info hidden">Die Graphansicht zeigt eine visuelle Darstellung der Interaktion mit einem bestimmten
+            Projekt.</p>
+        <div class="chart-container">
+            <canvas id="graphcontainer"></canvas>
+            <button class="graph-button">Ansicht wechseln</button>
+        </div>
+
+
+    </div>
+</template>
+
+<template id="template-date">
+     <span class="date">
+         <span class="month"></span>
+         <span class="day"></span>
+         <span class="year"></span>
+     </span>
+</template>
+<script src="lib/jquery-3.3.1.js"></script>
+<script src="lib/Chart.js"></script>
+<script src="lib/Moment.js"></script>
+<script type="module" src="lib/progressbar.min.js"></script>
+<script src="js/Helper.js"></script>
+<script src="js/EventTarget.js"></script>
+<script src="js/DataGetter.js"></script>
+<script src="js/DashboardView.js"></script>
+<script src="js/ProjectView.js"></script>
+<script src="js/GraphView.js"></script>
+<script src="js/Tabbar.js"></script>
+<script src="js/App.js"></script>
+</html>

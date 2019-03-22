@@ -1,0 +1,244 @@
+body {
+    font-weight: 300;
+    font-family: "Segoe UI", Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 43, 43);
+}
+
+h1 {
+    width: 99vw;
+    height: 7.5vh;
+    line-height: 7.5vh;
+    font-family: "Segoe UI", Verdana, sans-serif;
+    font-size: xx-large;
+    background-color: #86BBD8;
+    color: #FFF;
+    text-align: left;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    padding-top: 0;
+    padding-left: 1vw;
+    margin-top: 0;
+}
+
+h1 .info-button {
+    float: right;
+    height: 7.5vh;
+    line-height: 7.5vh;
+    padding-right: 2.5vw;
+}
+
+h1 .info-button:hover {
+    cursor: pointer;
+    color: #33658a
+}
+
+.info:hover {
+    cursor: pointer;
+}
+
+p {
+    width: 90vw;
+    margin: 2.5vh auto;
+}
+
+p, a {
+    font-size: medium;
+    text-align: center;
+    color: white;
+}
+
+p.info {
+    background: rgb(250, 250, 250);
+    border: 1px solid rgb(120, 120, 120);
+    color: rgb(0, 0, 0);
+    padding: 1vh;
+    margin: 0 auto;
+}
+
+.timeframe {
+    width: 100vw;
+    height: 3vh;
+    line-height: 3vh;
+    color: #FFF;
+}
+
+.circle, .text-data {
+    height: 30vw;
+    width: 30vw;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    margin: 1vw;
+}
+
+.datacircles-dashboard {
+    width: 96vw;
+    height: 35vw;
+    margin: 5vh auto;
+}
+
+.circle::after {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+.data-time.circle::after {
+    content: "Tage Bearbeitungszeit";
+}
+
+.data-locs.circle::after {
+    content: "Lines of Code";
+}
+
+.data-numprojects::after {
+    content: "Anzahl Projekte";
+}
+
+.data-compiles::after {
+    content: "Erfolgreiche & gesamte Compiles";
+}
+
+
+#graphcontainer {
+    background-color: white;
+}
+
+.chart-container {
+    width: 90vw;
+    height: 50vh;
+    padding-left: 5vw;
+}
+
+#scrollbox {
+    overflow: scroll;
+    padding-left: 12.5vw;
+    width: 75vw;
+    height: 25vw;
+}
+
+div.timeframe {
+    width: 72vw;
+    margin: 1vh auto;
+}
+
+span.date {
+    background-color: white;
+    width: 20vw;
+    padding: 0.5vw;
+    margin: 2.5vw;
+    border-radius: 5%;
+    display: block;
+    float: left;
+    color: black;
+}
+
+span.date span {
+    display: block;
+}
+
+div.divider {
+    clear: both;
+}
+
+span.dateDivider {
+    width: 20vw;
+    padding-top: 3vh;
+    background: transparent;
+    color: white;
+    font-size: 2em;
+    float: left;
+    display: block;
+}
+
+span .day {
+    font-size: 2em;
+    color: #f26419;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 90vw;
+    text-align: left;
+    height: 5vh;
+}
+
+li {
+    background: #F6AE2D;
+    height: 2vh;
+    margin: 0.5vh 0;
+    padding: 2.5%;
+    font-family: "Consolas", Monaco, sans-serif;
+}
+
+.data-tags li {
+    float: left;
+    height: 1vh;
+    font-size: smaller;
+    margin: 0.5vh 0.5vw;
+    border-radius: 5%;
+    background: rgba(117, 142, 79, 1);
+}
+
+
+.data-projectlist li::before {
+    text-align: right;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    margin-right: 2.5vw;
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900;
+    content: "\f138";
+}
+
+.data-project:hover {
+    background: #F26419;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.description-short {
+    clear: both;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 0 0.5vw 0;
+    text-align: left;
+    font-size: 1.25em;
+}
+
+.description-long {
+    text-align: justify;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 0 2.5vw 0;
+    font-size: 0.9em;
+    border-style: solid;
+    border-color: rgba(134, 187, 216, 1);
+    border-width: 0 0 1px 0 ;
+}
+
+.graph-button {
+    background-color: #F6AE2D;
+    border: none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.graph-button:hover {
+    background-color: #F26419;
+}
